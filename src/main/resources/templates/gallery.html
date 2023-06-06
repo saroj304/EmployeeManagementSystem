@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://thyemleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div th:include="header.html"></div>
+	<span th:each="imgname: ${image}"> <img alt="image"
+		th:src="@{'/images/'+${imgname}}" class="img-fluid img-thumbnail" height="300px" width="300px">
+	</span>
+
+</body>
+</html>
